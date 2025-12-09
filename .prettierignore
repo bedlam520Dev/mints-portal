@@ -1,0 +1,53 @@
+# Dependency directories
+node_modules
+.pnp
+.pnp.js
+
+# Next.js / build artifacts
+.next
+out
+build
+dist
+
+# Generated files
+coverage
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs and diagnostics
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+_dev/
+_devlogs/
+
+# Environment files
+.env*
+
+# Lockfiles we don't want formatted
+pnpm-lock.yaml
+
+# Misc
+.DS_Store
+
+# Dotenv
+.env
+.env.keys
+.env.local
+.env.development
+.env.production
+
+# Dev
+_dev/**
+_devlogs/**
+
+# Node, Next, VSCode, etc.
+node_modules/**
+.next/**
+.git/**
+.github/**
+.vscode/**
+.venv/**
+build/**
+scripts/**
+dist/**
