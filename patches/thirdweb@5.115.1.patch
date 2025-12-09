@@ -1,0 +1,36 @@
+diff --git a/dist/cjs/react/web/ui/ConnectWallet/Details.js b/dist/cjs/react/web/ui/ConnectWallet/Details.js
+index f8593ec830e91199daf8d8ee961329fe39d1b229..c1533483ac8781d366a61fd81c89377dc4231b29 100644
+--- a/dist/cjs/react/web/ui/ConnectWallet/Details.js
++++ b/dist/cjs/react/web/ui/ConnectWallet/Details.js
+@@ -226,7 +226,7 @@ function DetailsModal(props) {
+                                     alignItems: "center",
+                                     display: "flex",
+                                     gap: index_js_1.spacing.xxs,
+-                                }, children: [props.detailsModal?.connectedAccountName ? ((0, jsx_runtime_1.jsx)(text_js_1.Text, { color: "primaryText", size: "md", weight: 500, children: props.detailsModal.connectedAccountName })) : ((0, jsx_runtime_1.jsx)(text_js_1.Text, { color: "primaryText", size: "md", weight: 500, children: (0, jsx_runtime_1.jsx)(name_js_1.AccountName, { fallbackComponent: (0, jsx_runtime_1.jsx)(address_js_2.AccountAddress, { formatFn: address_js_1.shortenAddress }), loadingComponent: (0, jsx_runtime_1.jsx)(address_js_2.AccountAddress, { formatFn: address_js_1.shortenAddress }) }) })), (0, jsx_runtime_1.jsx)(buttons_js_1.IconButton, { children: (0, jsx_runtime_1.jsx)(CopyIcon_js_1.CopyIcon, { text: activeAccount?.address || "", tip: locale.copyAddress }) })] }), (0, jsx_runtime_1.jsx)(InAppWalletUserInfo, { client: client, locale: locale })] })] }), !hideAllButtons && ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(basic_js_1.Container, { px: "lg", children: (0, jsx_runtime_1.jsxs)(basic_js_1.Container, { className: "tw-highlight-buttons", style: {
++                                }, children: [props.detailsModal?.connectedAccountName ? ((0, jsx_runtime_1.jsx)(text_js_1.Text, { color: "primaryText", size: "md", weight: 500, children: props.detailsModal.connectedAccountName })) : ((0, jsx_runtime_1.jsx)(text_js_1.Text, { color: "primaryText", size: "md", weight: 500, children: (0, jsx_runtime_1.jsx)(name_js_1.AccountName, { fallbackComponent: (0, jsx_runtime_1.jsx)(address_js_2.AccountAddress, { formatFn: address_js_1.shortenAddress }), loadingComponent: (0, jsx_runtime_1.jsx)(address_js_2.AccountAddress, { formatFn: address_js_1.shortenAddress }) }) })), (0, jsx_runtime_1.jsx)(CopyIcon_js_1.CopyIcon, { text: activeAccount?.address || "", tip: locale.copyAddress })] }), (0, jsx_runtime_1.jsx)(InAppWalletUserInfo, { client: client, locale: locale })] })] }), !hideAllButtons && ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(basic_js_1.Container, { px: "lg", children: (0, jsx_runtime_1.jsxs)(basic_js_1.Container, { className: "tw-highlight-buttons", style: {
+                                 display: "flex",
+                                 gap: index_js_1.spacing.xs,
+                             }, children: [!hideSendFunds && ((0, jsx_runtime_1.jsxs)(buttons_js_1.Button, { className: "tw-highlight-button__send", onClick: () => {
+diff --git a/dist/esm/react/web/ui/ConnectWallet/Details.js b/dist/esm/react/web/ui/ConnectWallet/Details.js
+index d5ace6f22a919870fc920691d2de736f60f6b24b..9935d793e9ea848145c1e52b6440214cd9ecfdd6 100644
+--- a/dist/esm/react/web/ui/ConnectWallet/Details.js
++++ b/dist/esm/react/web/ui/ConnectWallet/Details.js
+@@ -30,7 +30,7 @@ import { useWalletInfo } from "../../../core/utils/wallet.js";
+ import { WalletUIStatesProvider } from "../../providers/wallet-ui-states-provider.js";
+ import { BuyWidget } from "../Bridge/BuyWidget.js";
+ import { Container, Line } from "../components/basic.js";
+-import { Button, IconButton } from "../components/buttons.js";
++import { Button } from "../components/buttons.js";
+ import { ChainActiveDot } from "../components/ChainActiveDot.js";
+ import { CopyIcon } from "../components/CopyIcon.js";
+ import { fallbackChainIcon } from "../components/fallbackChainIcon.js";
+@@ -214,7 +214,7 @@ export function DetailsModal(props) {
+                                     alignItems: "center",
+                                     display: "flex",
+                                     gap: spacing.xxs,
+-                                }, children: [props.detailsModal?.connectedAccountName ? (_jsx(Text, { color: "primaryText", size: "md", weight: 500, children: props.detailsModal.connectedAccountName })) : (_jsx(Text, { color: "primaryText", size: "md", weight: 500, children: _jsx(AccountName, { fallbackComponent: _jsx(AccountAddress, { formatFn: shortenAddress }), loadingComponent: _jsx(AccountAddress, { formatFn: shortenAddress }) }) })), _jsx(IconButton, { children: _jsx(CopyIcon, { text: activeAccount?.address || "", tip: locale.copyAddress }) })] }), _jsx(InAppWalletUserInfo, { client: client, locale: locale })] })] }), !hideAllButtons && (_jsxs(_Fragment, { children: [_jsx(Container, { px: "lg", children: _jsxs(Container, { className: "tw-highlight-buttons", style: {
++                                }, children: [props.detailsModal?.connectedAccountName ? (_jsx(Text, { color: "primaryText", size: "md", weight: 500, children: props.detailsModal.connectedAccountName })) : (_jsx(Text, { color: "primaryText", size: "md", weight: 500, children: _jsx(AccountName, { fallbackComponent: _jsx(AccountAddress, { formatFn: shortenAddress }), loadingComponent: _jsx(AccountAddress, { formatFn: shortenAddress }) }) })), _jsx(CopyIcon, { text: activeAccount?.address || "", tip: locale.copyAddress })] }), _jsx(InAppWalletUserInfo, { client: client, locale: locale })] })] }), !hideAllButtons && (_jsxs(_Fragment, { children: [_jsx(Container, { px: "lg", children: _jsxs(Container, { className: "tw-highlight-buttons", style: {
+                                 display: "flex",
+                                 gap: spacing.xs,
+                             }, children: [!hideSendFunds && (_jsxs(Button, { className: "tw-highlight-button__send", onClick: () => {
+                             
