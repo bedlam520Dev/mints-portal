@@ -672,6 +672,30 @@
 		border: 2px inset var(--mint-border);
 	}
 
+	.mint-profile-bar {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
+		gap: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	.profile-bar {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 1;
+		gap: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
 	.mint-action-bar {
 		position: relative;
 		display: flex;
