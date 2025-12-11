@@ -50,4 +50,19 @@ export const ACTION_LINKS: ActionLink[] = [
 		icon: '✖️',
 	},
 ];
-    
+
+export type ProfileLink = {
+	id: string;
+	label: string;
+	href: string;
+	icon: string;
+};
+
+export const PROFILE_LINKS: ProfileLink[] = [
+	{
+		id: 'profile',
+		label: 'Profile',
+		href: './profile',
+		icon: '👤',
+	},
+];
