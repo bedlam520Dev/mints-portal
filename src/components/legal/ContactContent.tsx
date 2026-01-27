@@ -53,11 +53,10 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 				<h2 className='legal-h2'>Connect With Us</h2>
 				<div className='mint-activity-panel-wrapper'>
 					<div className='grid gap-4 sm:grid-cols-2'>
-						{/* X/Twitter */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
-								<Twitter className='h-5 w-5' />
-								<h3 className='font-semibold'>X (Twitter)</h3>
+								<X className='h-5 w-5' />
+								<h3 className='font-semibold'>X (X)</h3>
 							</div>
 							<p className='legal-p text-sm'>Follow for updates and announcements</p>
 							<Button
@@ -76,7 +75,6 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							</Button>
 						</div>
 
-						{/* Farcaster */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
 								<Hash className='h-5 w-5' />
@@ -99,7 +97,6 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							</Button>
 						</div>
 
-						{/* Base App */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
 								<Globe className='h-5 w-5' />
@@ -122,7 +119,6 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							</Button>
 						</div>
 
-						{/* OpenSea */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
 								<FileText className='h-5 w-5' />
@@ -145,7 +141,6 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							</Button>
 						</div>
 
-						{/* Thirdweb Contract */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
 								<FileText className='h-5 w-5' />
@@ -168,7 +163,6 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							</Button>
 						</div>
 
-						{/* Direct Message */}
 						<div className='space-y-3'>
 							<div className='mint-gradient-text flex items-center gap-2'>
 								<MessageSquare className='h-5 w-5' />
@@ -211,8 +205,7 @@ export const ContactContent = ({ mode = 'page' }: ContactContentProps) => {
 							<li className='legal-p flex items-start gap-2'>
 								<span className='text-primary'>•</span>
 								<span>
-									<strong>X/Twitter DMs:</strong> Fastest response time for urgent
-									matters
+									<strong>X DMs:</strong> Fastest response time for urgent matters
 								</span>
 							</li>
 							<li className='legal-p flex items-start gap-2'>
