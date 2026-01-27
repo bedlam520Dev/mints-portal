@@ -1,0 +1,64 @@
+{
+	"compilerOptions": {
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"allowImportingTsExtensions": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"pretty": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"target": "ESNext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["./src/*"],
+			"@public/*": ["./public/*"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		".next/dev/types/**/*.ts",
+		"**/*.mts",
+		"postcss.config.mjs",
+		"next.config.ts"
+	],
+	"exclude": [
+		"node_modules/**/*",
+		"_dev/**/*",
+		"_devlogs/**/*",
+		"scripts/**/*",
+		".venv/**/*",
+		".vscode/**/*",
+		".next/**/*",
+		".git/**/*",
+		".github/**/*",
+		".oxlintrc.json",
+		".oxfmtrc.json",
+		".prettierignore",
+		".gitignore",
+		".env",
+		".env.x",
+		".env.keys",
+		".env.development",
+		".env.production",
+		"eslint.config.mjs",
+		"prettier.config.mjs",
+		"index.js",
+		"LICENSE",
+		"README.md",
+		"CLAUDE.md"
+	]
+}

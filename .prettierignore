@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Dev logs
+_devlogs/
+
+# Config files that shouldn't be reformatted
+package.json
+tsconfig.json
+next-env.d.ts
+
+# Generated files
+*.tsbuildinfo
+
+# Environment files
+.env*
+
+# Public assets
+public/**/*
+
+# Tools
+tools/
+
+# VSCode
+.vscode/
+
+# Documentation
+*.md
+CLAUDE.md
+LICENSE
+
+# Other configs
+next.config.ts
+postcss.config.mjs
