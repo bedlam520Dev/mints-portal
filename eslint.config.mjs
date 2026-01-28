@@ -39,7 +39,6 @@ export default tseslint.config(
 			'.env*',
 			'.gitignore',
 			'.prettierignore',
-			'.rsyncignore',
 			'public/**/*',
 		],
 	},
@@ -76,7 +75,6 @@ export default tseslint.config(
 			...reactHooksRules,
 			...prettierConfig.rules,
 
-			// Prettier integration
 			'prettier/prettier': [
 				'warn',
 				{
@@ -84,7 +82,6 @@ export default tseslint.config(
 				},
 			],
 
-			// TypeScript rules - reasonable defaults
 			'@typescript-eslint/no-unused-vars': [
 				'warn',
 				{
@@ -95,33 +92,26 @@ export default tseslint.config(
 			'@typescript-eslint/explicit-function-return-type': 'off',
 			'@typescript-eslint/explicit-module-boundary-types': 'off',
 			'@typescript-eslint/consistent-type-definitions': 'off',
-
-			// React rules - Next.js compatible
-			'react/react-in-jsx-scope': 'off', // Not needed in Next.js
-			'react/prop-types': 'off', // Using TypeScript
-			'react/jsx-props-no-spreading': 'off', // Common pattern
-			'react/jsx-filename-extension': 'off', // .tsx is fine
-			'react/jsx-max-depth': 'off', // Too restrictive
-
-			// Import rules - disabled overly strict ones
+			'react/react-in-jsx-scope': 'off',
+			'react/prop-types': 'off',
+			'react/jsx-props-no-spreading': 'off',
+			'react/jsx-filename-extension': 'off',
+			'react/jsx-max-depth': 'off',
 			'sort-imports': 'off',
 			'sort-keys': 'off',
-
-			// General rules - modern JS
-			'no-console': 'warn', // Allow console in dev
-			'no-undef': 'off', // TypeScript handles this
-			'no-ternary': 'off', // Ternaries are fine
-			'func-style': 'off', // Allow both styles
-			'arrow-body-style': 'off', // Allow both styles
-			'no-inline-comments': 'off', // Comments are good
-			curly: ['warn', 'multi-line'], // Require braces for multi-line
+			'no-console': 'warn',
+			'no-undef': 'off',
+			'no-ternary': 'off',
+			'func-style': 'off',
+			'arrow-body-style': 'off',
+			'no-inline-comments': 'off',
+			curly: ['warn', 'multi-line'],
 		},
 	},
-	// Disable no-console for server-side code and dev utilities
 	{
 		files: ['src/app/api/**/*.ts', 'src/lib/**/*.ts', 'src/components/dev/**/*.tsx'],
 		rules: {
-			'no-console': 'off', // Server-side and dev utilities need console logging
+			'no-console': 'off',
 		},
 	}
 );

@@ -3,10 +3,14 @@ const nextConfig = {
 	reactStrictMode: true,
 	productionBrowserSourceMaps: false,
 	allowedDevOrigins: [
+		'http://localhost:3000',
+		'http://localhost:3001',
 		'https://thirdweb.com',
 		'https://thirdweb-dev.com',
 		'https://thirdweb-beta.com',
-		'https://temperature-blacks-southwest-periodically.trycloudflare.com'],
+		'https://temperature-blacks-southwest-periodically.trycloudflare.com',
+		'https://mints-portal.vercel.app',
+	],
 	compiler: {
 		removeConsole:
 			process.env.NODE_ENV === 'production' ?
@@ -17,6 +21,10 @@ const nextConfig = {
 	},
 	images: {
 		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'mints-portal.vercel.app',
+			},
 			{
 				protocol: 'https',
 				hostname: 'ipfs.thirdwebcdn.com',

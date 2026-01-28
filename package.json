@@ -4,9 +4,12 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "DOTENV_PRIVATE_KEY_DEVELOPMENT='122acb5f60498305a0125a5f332e821b8cafa7c325f7b35882e8f3957ec76c90' dotenvx run -- next dev",
-		"build": "DOTENV_PRIVATE_KEY_PRODUCTION='94bc11eaa30c0354a85a2a9d9201eb6b8bc39aedccea76815e5a288178d47ea0' dotenvx run -- next build",
-		"start": "DOTENV_PRIVATE_KEY_PRODUCTION='94bc11eaa30c0354a85a2a9d9201eb6b8bc39aedccea76815e5a288178d47ea0' dotenvx run -- next start",
+		"dev": "dotenvx run -f .env.development -- next dev",
+		"dev:testnet": "dotenvx run -f .env.testnet -- next dev",
+		"build": "dotenvx run -f .env.production -- next build",           
+		"build:testnet": "dotenvx run -f .env.testnet -- next build",      
+		"start": "dotenvx run -f .env.production -- next start",
+		"start:testnet": "dotenvx run -f .env.testnet -- next start",
 		"clean:cache": "rm -rf .next/dev/cache > _devlogs/clean/clean-cache-$(date +%Y%m%d-%H%M%S).log 2>&1",
 		"clean:nuke": "rm -rf .next tsconfig.tsbuildinfo node_modules > _devlogs/clean/clean-nuke-$(date +%Y%m%d-%H%M%S).log 2>&1",
 		"tschk": "tsc --noEmit > _devlogs/tschk/tschk-$(date +%Y%m%d-%H%M%S).log 2>&1",
@@ -48,6 +51,7 @@
 	},
 	"devDependencies": {
 		"@dotenvx/dotenvx": "^1.52.0",
+		"@dotenvx/dotenvx-ops": "^0.30.3",
 		"@eslint/config-array": "^0.23.0",
 		"@eslint/js": "^9.39.2",
 		"@hey-api/openapi-ts": "^0.90.10",
